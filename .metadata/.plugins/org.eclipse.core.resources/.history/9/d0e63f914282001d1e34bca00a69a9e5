@@ -1,0 +1,40 @@
+package com.spacioteens.controllers;
+
+@RestController
+@RequestMapping("/usuarios")
+public class UsuarioControllers {
+	@Autowired
+	UsuarioServices usuarioServicios;
+	
+	@GetMapping()
+	public ArrayList <UsuarioModel> ObtenerContactos(){
+		return usuarioServicios.ObtenerContactos();
+	};
+	
+	@PostMapping()
+	public UsuarioModel guardarContactos(@RequestBody UsuarioModel usuarios) {
+		return this.usuarioServicios.guardarContactos(usuarios);
+	}
+	
+
+@GetMapping(path="/{id}")
+public Optional <UsuarioModel> obtenerUsuarioPorId(@PathVariable("id")Long id){
+	return this.usuarioServicios.ObtenerPorId(id);
+}
+
+@PutMapping("/actualizar")
+public UsuarioModel update(@RequestBody UsuarioModel usuariomodel) {
+	return usuarioServicios.actualizar(usuariomodel);
+}
+
+@DeleteMapping("/{id}")
+public String eliminarPorId(@PathVariable("id") Long id) {
+	boolean check=this.usuarioServicios.eliminarContacto(id);
+	if(check) {
+		return "se elimino el usuario"+id;
+	}else {
+	return "no se elimino el usuario"+id; 
+	}
+}
+	
+}

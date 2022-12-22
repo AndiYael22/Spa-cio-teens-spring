@@ -1,0 +1,18 @@
+package com.spacioteens.services;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.spacioteens.repositories.OrdenRepository;
+
+@Service
+public class OrdenServices {
+	@Autowired
+	OrdenRepository ordenRepositorio;
+	
+	public Arraylist<OrdenModel> ObtenerOrden(){
+		return (ArrayList <OrdenModel>) ordenRepositorio.findAll();
+	}
+}

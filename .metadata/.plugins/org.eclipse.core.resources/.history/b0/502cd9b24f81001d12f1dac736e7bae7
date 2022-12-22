@@ -1,0 +1,22 @@
+package com.spacioteens.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import java.util.ArrayList;
+import com.spacioteens.models.ContactoModel;
+import com.spacioteens.models.OrdenModel;
+import com.spacioteens.services.OrdenServices;
+
+@RestController
+@RequestMapping("/")
+public class OrdenControllers {
+@Autowired
+OrdenServices ordenServicios;
+
+@GetMapping()
+public ArrayList <OrdenModel> ObtenerOrden(){
+	return ordenServicios.obtenerOrden();
+}
+}

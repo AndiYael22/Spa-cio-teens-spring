@@ -1,0 +1,38 @@
+package com.spacioteens.controllers;
+
+import java.util.ArrayList;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spacioteens.models.PerfilModel;
+import com.spacioteens.services.PerfilServices;
+
+@RestController
+@RequestMapping("/perfil")
+public class PerfilControllers {
+	@Autowired
+	PerfilServices perfilServicios;
+	
+	@GetMapping()
+	public ArrayList <PerfilModel> ObtenerContactos(){
+		return perfilServicios.ObtenerContactos();
+	};
+	
+	@PostMapping()
+	public PerfilModel guardarContactos(@RequestBody PerfilModel perfil) {
+		return this.perfilServicios.guardarContactos(perfil);
+	};
+	
+
+@GetMapping(path="/{id}")
+public Optional <PerfilModel> obtenerUsuarioPorId(@PathVariable("id")Long id){
+	return this.perfilServicios.ObtenerPorId(id);
+}
+}

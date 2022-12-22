@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.spacioteens.services.OrdenServices"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.spacioteens.repositories.OrdenRepository"/>
+    <fullyQualifiedTypeName name="com.spacioteens.models.OrdenModel"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.spacioteens.repositories.PagoRepository"/>
+    <fullyQualifiedTypeName name="com.spacioteens.repositories.PerfilRepository"/>
+    <fullyQualifiedTypeName name="com.spacioteens.repositories.ProductoRepository"/>
+    <fullyQualifiedTypeName name="com.spacioteens.repositories.UsuarioRepository"/>
+    <fullyQualifiedTypeName name="com.spacioteens.services.PagoServices"/>
+    <fullyQualifiedTypeName name="com.spacioteens.models.PagoModel"/>
+    <fullyQualifiedTypeName name="com.spacioteens.services.PerfilServices"/>
+    <fullyQualifiedTypeName name="com.spacioteens.models.PerfilModel"/>
+    <fullyQualifiedTypeName name="com.spacioteens.services.ProductoServices"/>
+    <fullyQualifiedTypeName name="com.spacioteens.models.ProductoModel"/>
+    <fullyQualifiedTypeName name="com.spacioteens.services.UsuarioServices"/>
+    <fullyQualifiedTypeName name="com.spacioteens.models.UsuarioModel"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+</qualifiedTypeNameHistroy>
